@@ -24,22 +24,25 @@ class MyPlot:
 
     @staticmethod
     def twoDScatter(xList, yList, xLabels=None, yLabels=None):
+        #Get x and y values
         y = yList
         x = xList
-        width = 1/1.5
-        plt.scatter(x, y, 3, color="blue")
+        width = 25
+        plt.scatter(x, y, width, color="blue")
         
         fig = plt.gcf()
+        #Make axis labels
         plt.xlabel(xLabels)
         plt.ylabel(yLabels)
     
+        #Produce graph
         plt.tight_layout()
         plt.show()
 
 
     @staticmethod
     def twoDBar(xList, yList, xLabels=None, yLabels=None):
-                
+        #Get x and y values
         y = yList
         x = xList
         width = 1/1.5
@@ -47,9 +50,11 @@ class MyPlot:
         
         
         fig = plt.gcf()
+        #Make axis labels
         plt.xlabel(xLabels)
         plt.ylabel(yLabels)
     
+        #Produce grap
         plt.tight_layout()
         plt.show()
 
