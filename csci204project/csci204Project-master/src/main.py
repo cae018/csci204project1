@@ -112,7 +112,7 @@ def topMenu(info):
     #FILL ME, test if t is ok, if not do something smart
     if t == 3:
         print(topicAnalysisTrain(info.tpath))
-    if t == 4:
+    elif t == 4:
         print(topicAnalysisEval(info.epath))
         
     #Checkpoint 2, only option 3 is available from menu
