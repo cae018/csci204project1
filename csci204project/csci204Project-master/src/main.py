@@ -72,6 +72,10 @@ def user_interface():
     ##Currently there is nothing, so skip this for now
     epath = input("Please enter the filepath for the unknown data: " )
     info.epath = epath
+    if os.path.basename(epath) != '???':
+        print('Enter valid eval path')
+        epath = input("Please enter the filepath for the unknown data: ")
+        info.epath = epath
     print("Loading Eval Documents")
 
 
