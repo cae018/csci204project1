@@ -91,7 +91,7 @@ def user_interface():
     
             
     #info.epath is set to the list of documents
-    #info.epath = docList2
+    info.epath = docList2
     
     #FILL ME... if everything is ok call the topMenu
     topMenu(info)
@@ -112,6 +112,8 @@ def topMenu(info):
     #FILL ME, test if t is ok, if not do something smart
     if t == 3:
         print(topicAnalysisTrain(info.tpath))
+    if t == 4:
+        print(topicAnalysisEval(info.epath))
         
     #Checkpoint 2, only option 3 is available from menu
     else:
