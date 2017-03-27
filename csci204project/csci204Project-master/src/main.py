@@ -118,7 +118,7 @@ def topMenu(info):
     #Checkpoint 2, only option 3 is available from menu
     else:
         print('\n')
-        print('Try again. Currently only option 3 is available.')
+        print('Try again. Currently only option 3 and 4 are available.')
         print('\n')
         topMenu(info)
 
