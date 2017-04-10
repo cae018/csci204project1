@@ -51,7 +51,7 @@ class MyDecisionTree:
         returns a list of unique elements in the col of xData and entropy of column
         """
         #Only have 6 columns so raise error if col > 5
-        assert(col >= 0 and col <= 5)
+        assert(col >= 0 and col <= len(xData[0]))
         #There are 6 columns of xData from the train folder
         #[date, to, forward, reply, top10, bott10]
         #xMap = {0: 'date', 1: 'to', 2: 'forward', 3: 'reply', 4: 'top10', 5: 'bott10'}
@@ -71,8 +71,7 @@ class MyDecisionTree:
         for j in range(numElem):
             #Update the number of a given item in the column
             uniDict[str(elements[j])] += 1
-        print(uniDict)
-        
+            
         #set entropy to 0
         entropy = 0
         for u in unique:
